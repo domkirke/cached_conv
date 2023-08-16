@@ -9,7 +9,7 @@ with open("requirements.txt", "r") as requirements:
 
 setuptools.setup(
     name="cached_conv",
-    version=os.environ["CACHED_CONV_VERSION"],
+    version="2.5.1",
     author="Antoine CAILLON",
     author_email="caillon@ircam.fr",
     description="Tools allowing to use neural network inside realtime apps.",
@@ -21,6 +21,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires=requirements.split("\n"),
+    # install_requires=requirements.split("\n"),
     python_requires='>=3.7',
 )

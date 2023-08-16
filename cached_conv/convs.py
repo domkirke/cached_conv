@@ -65,7 +65,7 @@ class CachedSequential(nn.Sequential):
 class Sequential(CachedSequential):
     pass
 
-
+@torch.fx.wrap
 class CachedPadding1d(nn.Module):
     """
     Cached Padding implementation, replace zero padding with the end of
